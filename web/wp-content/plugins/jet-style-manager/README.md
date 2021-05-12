@@ -1,5 +1,14 @@
 # Jet Style Manager
 
+## 1.2.0
+* ADD: Integrated google fonts in typography control
+
+## 1.1.6
+* ADD: hooks for implementing custom sections and controls
+
+## 1.1.5
+* FIX: Block wrapper
+
 ## 1.1.4
 * FIX: Typography control
 

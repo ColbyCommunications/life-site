@@ -13,6 +13,15 @@
 		}
 	}
 
+//Panel button
+	.interface-pinned-items{
+		.components-button{
+			.dashicons-admin-customizer{
+				margin-right: 2px;
+			}
+		}
+	}
+
 //Control Wrapper
 	.jet-sm-gb-control-wrapper{
 		.components-base-control{
@@ -133,6 +142,9 @@
 						&:focus{
 							box-shadow: none;
 						}
+						.dashicons{
+							margin-right: 2px;
+						}
 					}
 				}
 			}
@@ -174,6 +186,22 @@
 				min-height: initial;
 				margin-bottom: initial;
 			}
+		}
+	}
+
+// debag mode
+	.jet-sm-gb-block-info{
+		display: none;
+	}
+	.is_debug_mod & .jet-sm-gb-block-info{
+		display: block;
+		background-color: #fcff0c;
+		padding: 10px;
+		h3{
+			margin: 0 0 5px;
+		}
+		.components-base-control{
+			margin-top: 20px;
 		}
 	}
 }

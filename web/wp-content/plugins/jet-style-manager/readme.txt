@@ -4,7 +4,7 @@ Tags: blocks, gutenberg, style, styles manager
 Requires at least: 5.6
 Tested up to: 5.6.0
 Requires PHP: 7.2
-Stable tag: 1.1.4
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,6 @@ JetStyleManager is a plugin that extends the functionalities of Gutenberg. Combi
 
 = Compatible plugins =
 - <a href="https://wordpress.org/plugins/jetformbuilder/">JetFormBuilder — form builder for Gutenberg</a>
-- <a href="https://crocoblock.com/plugins/jetengine-gutenberg/?utm_source=wpordpress&utm_campaign=jetstylemanager">JetEngine — everything for dynamic content</a>
 - <a href="https://crocoblock.com/plugins/jetsmartfilters-gutenberg/?utm_source=wpordpress&utm_campaign=jetstylemanager">JetSmartFilters. Advanced filters for any post type</a>
 - more coming soon...
 
