@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a87dac8553f639d7d93326807f0aa1b8",
+    "content-hash": "8dee6cc26d6b446f156b3d8297bac0c2",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -148,7 +148,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-life-theme",
-                "reference": "098d86e647d6387b21d0ac317cf70bcff24f6e51"
+                "reference": "8e8a9ff4353665794ea2d2f96dc0621b806ec25e"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -188,7 +188,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2021-04-26 16:11:37"
+            "time": "2021-05-12 15:24:01"
         },
         {
             "name": "composer/installers",
@@ -2032,15 +2032,15 @@
         },
         {
             "name": "wpackagist-plugin/capability-manager-enhanced",
-            "version": "1.9",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/capability-manager-enhanced/",
-                "reference": "tags/1.9"
+                "reference": "tags/2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.1.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.2.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
