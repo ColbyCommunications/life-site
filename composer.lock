@@ -812,16 +812,16 @@
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.7.1",
+            "version": "5.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "4d368c02f3e842b446c867589656382f95c6ac58"
+                "reference": "d0f5bdeb81800b6bcefee723ebf928b5677e2e86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4d368c02f3e842b446c867589656382f95c6ac58",
-                "reference": "4d368c02f3e842b446c867589656382f95c6ac58",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/d0f5bdeb81800b6bcefee723ebf928b5677e2e86",
+                "reference": "d0f5bdeb81800b6bcefee723ebf928b5677e2e86",
                 "shasum": ""
             },
             "require": {
@@ -829,7 +829,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.7.1"
+                "wordpress/core-implementation": "5.7.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -849,7 +849,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2021-04-15T02:15:49+00:00"
+            "time": "2021-05-13T00:40:25+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1386,16 +1386,16 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v5.2.7",
+            "version": "v5.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "59a684f5ac454f066ecbe6daecce6719aed283fb"
+                "reference": "5d5f97809015102116208b976eb2edb44b689560"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/59a684f5ac454f066ecbe6daecce6719aed283fb",
-                "reference": "59a684f5ac454f066ecbe6daecce6719aed283fb",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/5d5f97809015102116208b976eb2edb44b689560",
+                "reference": "5d5f97809015102116208b976eb2edb44b689560",
                 "shasum": ""
             },
             "require": {
@@ -1430,7 +1430,7 @@
             ],
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
-            "time": "2021-04-07T16:07:52+00:00"
+            "time": "2021-05-16T13:07:46+00:00"
         },
         {
             "name": "symfony/debug",
@@ -1486,16 +1486,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.23",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "67b77716f517e3f864759232e1201e7aa2ab0e82"
+                "reference": "a96bc19ed87c88eec78e1a4c803bdc1446952983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/67b77716f517e3f864759232e1201e7aa2ab0e82",
-                "reference": "67b77716f517e3f864759232e1201e7aa2ab0e82",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a96bc19ed87c88eec78e1a4c803bdc1446952983",
+                "reference": "a96bc19ed87c88eec78e1a4c803bdc1446952983",
                 "shasum": ""
             },
             "require": {
@@ -1526,7 +1526,7 @@
             ],
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
-            "time": "2021-05-09T09:13:09+00:00"
+            "time": "2021-05-16T12:27:45+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1659,16 +1659,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v4.4.23",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "ff6e63c7b5de874464642969968f61f8dc649ac3"
+                "reference": "424d29dfcc15575af05196de0100d7b52f650602"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/ff6e63c7b5de874464642969968f61f8dc649ac3",
-                "reference": "ff6e63c7b5de874464642969968f61f8dc649ac3",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/424d29dfcc15575af05196de0100d7b52f650602",
+                "reference": "424d29dfcc15575af05196de0100d7b52f650602",
                 "shasum": ""
             },
             "require": {
@@ -1726,7 +1726,7 @@
             ],
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
-            "time": "2021-04-28T06:59:52+00:00"
+            "time": "2021-05-16T09:52:47+00:00"
         },
         {
             "name": "symfony/translation-contracts",
