@@ -31,7 +31,7 @@ printf "Sage Themes... \n"
 NPM_THEME_DIRS=`ls web/wp-content/themes/colby-*/resources/assets/scripts/@(main.js)` # Saves it to a variable
 for NPMTHEMEDIR in $NPM_THEME_DIRS; do
   NPMTHEMEDIR=`dirname $NPMTHEMEDIR`
-  # NPMTHEMEDIR_PRUNED=${NPMTHEMEDIR:0:$((${#NPMTHEMEDIR}-3))}
+  NPMTHEMEDIR_PRUNED=${NPMTHEMEDIR:0:$((${#NPMTHEMEDIR}-3))}
   cd $NPMTHEMEDIR
   printf "Installing Composer dependencies for ${NPMTHEMEDIR_PRUNED}... \n"
   composer install
