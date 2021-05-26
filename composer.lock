@@ -148,7 +148,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-life-theme",
-                "reference": "3d2cad2f1444b7305dcf65b96d6e2f7f30ae46cb"
+                "reference": "79918b81a3cf7451bdda3c4b016636d4709c1a2a"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -188,7 +188,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2021-05-26 16:39:59"
+            "time": "2021-05-26 17:57:02"
         },
         {
             "name": "composer/installers",
@@ -2113,15 +2113,15 @@
         },
         {
             "name": "wpackagist-plugin/elementor",
-            "version": "3.2.3",
+            "version": "3.2.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/3.2.3"
+                "reference": "tags/3.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.3.2.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.2.4.zip",
                 "reference": null,
                 "shasum": null
             },
