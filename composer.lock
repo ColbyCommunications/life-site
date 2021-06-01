@@ -148,7 +148,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-life-theme",
-                "reference": "edad3d6fa911ce17bd8de75af1fa133e035d02ab"
+                "reference": "dd50e585f429f9978cfd201201afd93ae7099060"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -188,7 +188,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2021-05-26 18:43:58"
+            "time": "2021-06-01 15:10:56"
         },
         {
             "name": "composer/installers",
