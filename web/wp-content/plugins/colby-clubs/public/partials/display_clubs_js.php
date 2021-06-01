@@ -3,8 +3,8 @@
 	
 	<div class="clubs-orgs__filter">
 		<div class="clubs-orgs__filter__search">
-			<label for="club_search">SEARCH:</label>
-			<input type="text" name="club_search" id="club_search" aria-label="Club Keyword Search">
+			<label for="club_search" class="screen-reader-text">SEARCH:</label>
+			<input type="text" name="club_search" id="club_search" placeholder="Search by keyword" aria-label="Keyword Search for Clubs and Organizations">
 		</div>
 		<div class="clubs-orgs__filter__cats">
 			<?php echo Colby_Clubs_Public::display_category_list(); ?>

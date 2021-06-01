@@ -68,10 +68,10 @@
 				$results.text('').show(); // clear it out.
 				$.each( response, function( index, object ) { 
 					let output = '';
-					output = '<div>';
+					output = '<div class="item">';
 					output += '<h3>' + object.title.rendered + '</h3>';
-					output += '<div>' + object.content.rendered + '</div>';
-					output += '<hr /></div>';
+					output += '<div class="content">' + object.content.rendered + '</div>';
+					output += '</div>';
 					$(output).hide().appendTo($results).fadeIn();
 				});
 				display_pagination( xhr, page, $pagination );

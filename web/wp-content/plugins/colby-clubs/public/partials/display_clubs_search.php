@@ -6,7 +6,7 @@ $categories = get_terms( [ 'taxonomy' => 'cc_club_tax' ] );
 ?>
 
 <div class="search-form-container" id="results">
-	<h3>SEARCH:</h3>
+	<h3 class=>SEARCH:</h3>
 	<form role="search" action="#results" method="get" class="search-form" >
 		<div class="search-form__input keywords">
 			<label for="keywords" class="screen-reader-text">Keywords</label>

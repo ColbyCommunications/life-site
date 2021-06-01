@@ -108,7 +108,7 @@ class Colby_Clubs_Public {
 	 * @return string HTML for the list.
 	 */
 	public static function display_category_list() {
-		$html  = sprintf( '<li><a href="?term_id=%d" data-term="%d">%s</a></li>', '', '', 'All Categories' );
+		$html  = sprintf( '<li><a href="?term_id=%d" data-term="%d" class="selected">%s</a></li>', '', '', 'All Categories' );
 		$terms = get_terms( [ 'taxonomy' => 'cc_club_tax' ] );
 		foreach ( $terms as $term ) {
 			$html .= sprintf( '<li><a href="?term_id=%d" data-term="%d" rel="nofollow">%s</a></li>', $term->term_id, $term->term_id, $term->name );

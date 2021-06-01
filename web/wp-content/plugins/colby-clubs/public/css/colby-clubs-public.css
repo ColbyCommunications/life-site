@@ -1,6 +1,4 @@
 .clubs-orgs {
-  border: solid 3px #990000;
-  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,17 +8,90 @@
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  flex-shring: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
-  border-right: solid 1px #666666;
-  padding-right: 20px;
-  margin-right: 20px;
+  margin-right: 30px;
+}
+
+.clubs-orgs__filter input {
+  font-size: 16px;
+  border: solid 1px #E7E7E7;
+  border-radius: 4px;
+  width: 100%;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: 97% 50%;
+  margin-bottom: 20px;
+}
+
+.clubs-orgs__filter__cats ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.clubs-orgs__filter__cats ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  margin: 0 0 4px 0;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #d06544;
+  border: solid 2px #E36F45;
+  background-image: url("../images/chevron.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 4% 54%;
+  font-size: 16px;
+}
+
+.clubs-orgs__filter__cats ul li a:hover, .clubs-orgs__filter__cats ul li a:active, .clubs-orgs__filter__cats ul li a:focus, .clubs-orgs__filter__cats ul li a.selected {
+  background-color: #bf4427;
+  border: solid 2px #e26f4b;
 }
 
 .clubs-orgs__results {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.clubs-orgs__results .item {
+  padding: 25px 30px;
+  background-color: #B7D5F1;
+  border-top: solid 7px #a0c5ea;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.clubs-orgs__results .item h3 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #94bde7;
+}
+
+.clubs-orgs__results .item .content hr {
+  border-bottom: solid 1px #94bde7;
+  margin: 20px 0;
+}
+
+.clubs-orgs__results .item .content a {
+  color: #1d407b;
+  text-decoration: none;
+}
+
+.clubs-orgs__results .item .content a:hover {
+  text-decoration: underline;
+}
+
+.clubs-orgs .loading {
+  padding: 25px 30px;
+  background-color: #B7D5F1;
+  border-top: solid 7px #a0c5ea;
 }
 /*# sourceMappingURL=colby-clubs-public.css.map */
