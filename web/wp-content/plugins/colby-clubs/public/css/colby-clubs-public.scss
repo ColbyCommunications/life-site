@@ -1,0 +1,17 @@
+
+.clubs-orgs {
+    border: solid 3px #990000;
+    padding: 10px;
+    display: flex;
+    &__filter {
+        flex-grow: 0;
+        flex-shring: 0;
+        flex-basis: 300px;
+        border-right: solid 1px #666666;
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+    &__results {
+        flex-grow: 1;
+    }
+}
