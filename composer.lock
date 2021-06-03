@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e84b98e7504d16473582e5ae8f5ef0f",
+    "content-hash": "4b8273a0c5360f74bf116845973e15e0",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -148,7 +148,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-life-theme",
-                "reference": "dd50e585f429f9978cfd201201afd93ae7099060"
+                "reference": "2762e369e22f021074f8579cece91b586801de6e"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -188,7 +188,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2021-06-01 15:10:56"
+            "time": "2021-06-03 16:16:43"
         },
         {
             "name": "composer/installers",
@@ -2073,15 +2073,15 @@
         },
         {
             "name": "wpackagist-plugin/cloudflare",
-            "version": "4.4.0",
+            "version": "4.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cloudflare/",
-                "reference": "tags/4.4.0"
+                "reference": "tags/4.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.4.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
