@@ -1936,16 +1936,16 @@
         },
         {
             "name": "wp-graphql/wp-graphql",
-            "version": "v1.3.9",
+            "version": "v1.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-graphql/wp-graphql.git",
-                "reference": "b02d8dbc9f77d02bfd3749fa5ac09e8ce8d75e95"
+                "reference": "6cdf0c599493e83575055b22cfd0447253e19e75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-graphql/wp-graphql/zipball/b02d8dbc9f77d02bfd3749fa5ac09e8ce8d75e95",
-                "reference": "b02d8dbc9f77d02bfd3749fa5ac09e8ce8d75e95",
+                "url": "https://api.github.com/repos/wp-graphql/wp-graphql/zipball/6cdf0c599493e83575055b22cfd0447253e19e75",
+                "reference": "6cdf0c599493e83575055b22cfd0447253e19e75",
                 "shasum": ""
             },
             "require": {
@@ -2009,7 +2009,7 @@
                 }
             ],
             "description": "GraphQL API for WordPress",
-            "time": "2021-05-26T19:29:48+00:00"
+            "time": "2021-06-09T21:34:42+00:00"
         },
         {
             "name": "wpackagist-plugin/cache-control",
