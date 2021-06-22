@@ -100,7 +100,7 @@
 			for (let i = 0; i < pages; i++) {
 				html += '<li><a href="#" data-page="' + (i+1) + '">' + (i+1) + '</a></li>';
 			}
-			html = '<ul>' + html + '</ul>';	
+			html = '<ul class="page-numbers">' + html + '</ul>';	
 			$pagination.html(html).fadeIn();
 		}
 	}
