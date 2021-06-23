@@ -148,7 +148,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-life-theme",
-                "reference": "4ab49abe9d89081b22a8167486f6e8240618ae40"
+                "reference": "aa839fda1070cfc6b08d4e8527d23b0b1186371c"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -188,7 +188,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2021-06-23 18:15:38"
+            "time": "2021-06-23 21:19:37"
         },
         {
             "name": "composer/installers",
@@ -2033,15 +2033,15 @@
         },
         {
             "name": "wpackagist-plugin/capability-manager-enhanced",
-            "version": "2.0.2",
+            "version": "2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/capability-manager-enhanced/",
-                "reference": "tags/2.0.2"
+                "reference": "tags/2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.2.0.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
