@@ -1,11 +1,22 @@
+// Breakpoints
+$desktop_media: "(min-width: 971px)";
+$tablet_media: "(min-width: 768px) and (max-width: 970px)";
+$phone_media: "(max-width: 767px)";
 
 .clubs-orgs {
     display: flex;
+    @media #{$phone_media} {
+        flex-direction: column;
+    }
     &__filter {
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 300px;
         margin-right: 30px;
+        @media #{$phone_media} {
+            flex-basis: 100%;
+            margin-right: 0;
+        }
         input {
             font-size: 16px;
             border: solid 1px #E7E7E7;
@@ -53,6 +64,9 @@
     }
     &__results {
         flex-grow: 1;
+        @media #{$phone_media} {
+            flex-basis: 100%;
+        }
         .item {
             padding: 25px 30px;
             background-color: #B7D5F1;
