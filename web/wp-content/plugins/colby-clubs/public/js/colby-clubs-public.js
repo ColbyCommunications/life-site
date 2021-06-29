@@ -95,10 +95,12 @@
 			pages = xhr.getResponseHeader( 'X-WP-TotalPages' ),
 			html  = '';
 		
+		page = ( page ? page : 1 );
 		html = '';
 		if ( pages > 1 ) {
 			for (let i = 0; i < pages; i++) {
-				html += '<li><a href="#" data-page="' + (i+1) + '">' + (i+1) + '</a></li>';
+				selected = ( page == i+1 ) ? ' class="selected"' : '';
+				html += '<li><a href="#" data-page="' + (i+1) + '"' + selected + '>' + (i+1) + '</a></li>';
 			}
 			html = '<ul class="page-numbers">' + html + '</ul>';	
 			$pagination.html(html).fadeIn();
