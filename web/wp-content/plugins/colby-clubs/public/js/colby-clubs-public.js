@@ -93,7 +93,8 @@
 	function display_pagination( xhr, page, $pagination )	 {
 		let rows  = xhr.getResponseHeader( 'X-WP-Total' ),
 			pages = xhr.getResponseHeader( 'X-WP-TotalPages' ),
-			html  = '';
+			html  = '',
+			selected = '';
 		
 		page = ( page ? page : 1 );
 		html = '';
