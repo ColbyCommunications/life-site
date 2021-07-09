@@ -742,7 +742,7 @@ class GFFormDisplay {
 		$form_args = apply_filters( 'gform_form_args', compact( 'form_id', 'display_title', 'display_description', 'force_display', 'field_values', 'ajax', 'tabindex' ) );
 
 		if ( empty( $form_args['form_id'] ) ) {
-			return self::get_form_not_found_html( $form_id );
+			return self::get_form_not_found_html( $form_id, $ajax );
 		}
 
 		extract( $form_args );
@@ -752,14 +752,14 @@ class GFFormDisplay {
 			$form_title = $form_id;
 			$form_id    = GFFormsModel::get_form_id( $form_title );
 			if ( $form_id === 0 ) {
-				return self::get_form_not_found_html( $form_title );
+				return self::get_form_not_found_html( $form_title, $ajax );
 			}
 		}
 
 		$form = GFAPI::get_form( $form_id );
 
 		if ( ! $form ) {
-			return self::get_form_not_found_html( $form_id );
+			return self::get_form_not_found_html( $form_id, $ajax );
 		}
 
 		$action = remove_query_arg( 'gf_token' );
@@ -881,7 +881,7 @@ class GFFormDisplay {
 		$form = gf_apply_filters( array( 'gform_pre_render', $form_id ), $form, $ajax, $field_values );
 
 		if ( empty( $form ) ) {
-			return self::get_form_not_found_html( $form_id );
+			return self::get_form_not_found_html( $form_id, $ajax );
 		}
 
 		$has_pages = self::has_pages( $form );
@@ -1178,10 +1178,7 @@ class GFFormDisplay {
 					$iframe_content = '';
 				}
 
-				$form_string .= "
-                <iframe style='{$iframe_style}' src='about:blank' name='gform_ajax_frame_{$form_id}' id='gform_ajax_frame_{$form_id}'" . $iframe_title . ">" . $iframe_content . "</iframe>
-                <script type='text/javascript'>" . apply_filters( 'gform_cdata_open', '' ) . '' .
-					'gform.initializeOnLoaded( function() {' .
+				$form_scripts_body = 'gform.initializeOnLoaded( function() {' .
 						"gformInitSpinner( {$form_id}, '{$spinner_url}' );" .
 						"jQuery('#gform_ajax_frame_{$form_id}').on('load',function(){" .
 							"var contents = jQuery(this).contents().find('*').html();" .
@@ -1222,7 +1219,13 @@ class GFFormDisplay {
 							'}' .
 							"jQuery(document).trigger('gform_post_render', [{$form_id}, current_page]);" .
 						'} );' .
-					'} );' . apply_filters( 'gform_cdata_close', '' ) . '</script>';
+					'} );';
+
+				$form_scripts = GFCommon::get_inline_script_tag( $form_scripts_body );
+
+				$form_string .= "
+                <iframe style='{$iframe_style}' src='about:blank' name='gform_ajax_frame_{$form_id}' id='gform_ajax_frame_{$form_id}'" . $iframe_title . ">" . $iframe_content . "</iframe>
+                {$form_scripts}";
 			}
 
 			$is_first_load = ! $is_postback;
@@ -1248,8 +1251,9 @@ class GFFormDisplay {
 					add_action( 'admin_footer', $callback, 20 );
 					add_action( 'gform_preview_footer', $callback );
 				} else {
-					$form_string .= self::get_form_init_scripts( $form );
-					$form_string .= "<script type='text/javascript'>" . apply_filters( 'gform_cdata_open', '' ) . " gform.initializeOnLoaded( function() {  jQuery(document).trigger('gform_post_render', [{$form_id}, {$current_page}]) } ); " . apply_filters( 'gform_cdata_close', '' ) . '</script>';
+					$form_string      .= self::get_form_init_scripts( $form );
+					$init_script_body = "gform.initializeOnLoaded( function() {  jQuery(document).trigger('gform_post_render', [{$form_id}, {$current_page}]) } );";
+					$form_string      .= GFCommon::get_inline_script_tag( $init_script_body );
 				}
 			}
 
@@ -1283,10 +1287,11 @@ class GFFormDisplay {
 	public static function footer_init_scripts( $form_id ) {
 		global $_init_forms;
 
-		$form         = RGFormsModel::get_form_meta( $form_id );
-		$form_string  = self::get_form_init_scripts( $form );
-		$current_page = self::get_current_page( $form_id );
-		$form_string .= "<script type='text/javascript'>" . apply_filters( 'gform_cdata_open', '' ) . " gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [{$form_id}, {$current_page}]) } ); " . apply_filters( 'gform_cdata_close', '' ) . '</script>';
+		$form               = RGFormsModel::get_form_meta( $form_id );
+		$form_string        = self::get_form_init_scripts( $form );
+		$current_page       = self::get_current_page( $form_id );
+		$footer_script_body = "gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [{$form_id}, {$current_page}]) } );";
+		$form_string        .= GFCommon::get_inline_script_tag( $footer_script_body );
 
 		/**
 		 * A filter to allow modification of scripts that fire in the footer
@@ -1851,14 +1856,12 @@ class GFFormDisplay {
 	private static function get_js_redirect_confirmation( $url, $ajax ) {
 		// JSON_HEX_TAG is available on PHP >= 5.3. It will prevent payloads such as <!--<script> from causing an error on redirection.
 		$url =  defined( 'JSON_HEX_TAG' ) ? json_encode( $url, JSON_HEX_TAG ) : json_encode( $url );
-		$confirmation = "<script type=\"text/javascript\">" . apply_filters( 'gform_cdata_open', '' ) . " function gformRedirect(){document.location.href={$url};}";
+		$script_body = "function gformRedirect(){document.location.href={$url};}";
 		if ( ! $ajax ) {
-			$confirmation .= 'gformRedirect();';
+			$script_body .= 'gformRedirect();';
 		}
 
-		$confirmation .= apply_filters( 'gform_cdata_close', '' ) . '</script>';
-
-		return $confirmation;
+		return GFCommon::get_inline_script_tag( $script_body );
 	}
 
 	public static function send_emails( $form, $lead ) {
@@ -2639,7 +2642,7 @@ class GFFormDisplay {
 	}
 
 	/**
-	 * If form has page conditional logic.
+	 * Determines if the form has page conditional logic.
 	 *
 	 * @since 2.5
 	 *
@@ -2648,8 +2651,12 @@ class GFFormDisplay {
 	 * @return bool
 	 */
 	public static function has_page_conditional_logic( $form ) {
+		if ( ! GFCommon::form_has_fields( $form ) ) {
+			return false;
+		}
+
 		foreach ( $form['fields'] as $field ) {
-			if ( $field->type === 'page' && ! empty( $field->conditionalLogic ) ) {
+			if ( $field->type === 'page' && ! empty( $field->conditionalLogic ) && is_array( $field->conditionalLogic ) ) {
 				return true;
 			}
 		}
@@ -2998,48 +3005,43 @@ class GFFormDisplay {
 
 	public static function get_form_init_scripts( $form ) {
 
-		$script_string = '';
+		$script_body = '';
 
 		if ( ! $form ) {
-			return $script_string;
+			return $script_body;
 		}
 
 		/* rendering initialization scripts */
 		$init_scripts = rgar( self::$init_scripts, $form['id'] );
 
 		if ( ! empty( $init_scripts ) ) {
-			$script_string =
-				"<script type='text/javascript'>" . apply_filters( 'gform_cdata_open', '' ) . ' ';
+			$script_body = isset( $gf_global_script ) ? $gf_global_script : '';
 
-			$script_string .= isset( $gf_global_script ) ? $gf_global_script : '';
-
-			$script_string .=
+			$script_body .=
 				"gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){" .
 				"if(formId == {$form['id']}) {";
 
 			foreach ( $init_scripts as $init_script ) {
 				if ( $init_script['location'] == self::ON_PAGE_RENDER ) {
-					$script_string .= $init_script['script'];
+					$script_body .= $init_script['script'];
 				}
 			}
 
-			$script_string .=
+			$script_body .=
 				"} " . //keep the space. needed to prevent plugins from replacing }} with ]}
 				"} );" .
 
 				"jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){";
 			foreach ( $init_scripts as $init_script ) {
 				if ( $init_script['location'] == self::ON_CONDITIONAL_LOGIC ) {
-					$script_string .= $init_script['script'];
+					$script_body .= $init_script['script'];
 				}
 			}
 
-			$script_string .=
-
-				"} ) } );" . apply_filters( 'gform_cdata_close', '' ) . '</script>';
+			$script_body .= '} ) } );';
 		}
 
-		return $script_string;
+		return GFCommon::get_inline_script_tag( $script_body );
 	}
 
 	public static function get_chosen_init_script( $form ) {
@@ -4310,13 +4312,15 @@ class GFFormDisplay {
 	/**
 	 * Returns the HTML to be be output when the requested form is not found.
 	 *
+	 * @since 2.5.7 Added the $ajax argument.
 	 * @since 2.4.18
 	 *
 	 * @param int|string $form_id The ID or Title of the form requested for display.
+	 * @param bool       $ajax    Whether to return the html as part of the ajax postback html or on its own.
 	 *
 	 * @return string
 	 */
-	public static function get_form_not_found_html( $form_id ) {
+	public static function get_form_not_found_html( $form_id, $ajax = false ) {
 		$form_not_found_message = '<p class="gform_not_found">' . esc_html__( 'Oops! We could not locate your form.', 'gravityforms' ) . '</p>';
 
 		/**
@@ -4327,7 +4331,9 @@ class GFFormDisplay {
 		 * @param string     $form_not_found_message The default form not found message.
 		 * @param int|string $form_id                The ID or Title of the form requested for display.
 		 */
-		return apply_filters( 'gform_form_not_found_message', $form_not_found_message, $form_id );
+		$form_not_found_message = apply_filters( 'gform_form_not_found_message', $form_not_found_message, $form_id );
+
+		return $ajax ? self::get_ajax_postback_html( $form_not_found_message ) : $form_not_found_message;
 	}
 
 	/**
@@ -4448,7 +4454,7 @@ class GFFormDisplay {
 			'gf_left_third'     => 'gfield--width-third',
 			'gf_middle_third'   => 'gfield--width-third',
 			'gf_right_third'    => 'gfield--width-third',
-			'gf_first_quarter'   => 'gfield--width-quarter',
+			'gf_first_quarter'  => 'gfield--width-quarter',
 			'gf_second_quarter' => 'gfield--width-quarter',
 			'gf_third_quarter'  => 'gfield--width-quarter',
 			'gf_fourth_quarter' => 'gfield--width-quarter',
