@@ -156,6 +156,7 @@ class Colby_Clubs {
 
 		$this->loader->add_action( 'init', $plugin_admin, 'init_cpt', 0 );
 		$this->loader->add_action( 'init', $plugin_admin, 'init_tax_category', 0 );
+		$this->loader->add_action( 'rest_api_init', $plugin_admin, 'acf2api_hook_all_post_types', 99 );
 
 		// $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		// $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );

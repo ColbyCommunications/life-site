@@ -1,4 +1,4 @@
-/*! elementor-pro - v3.3.1 - 20-06-2021 */
+/*! elementor-pro - v3.3.2 - 11-07-2021 */
 @charset "UTF-8";
 .elementor-bg-transform .elementor-bg {
   will-change: transform; }
@@ -6117,7 +6117,8 @@ ol.elementor-toc__list-wrapper {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 1; }
     .e-tabs-inner-tabs .e-inner-tabs-wrapper :after {
       content: '';
       width: 100%;

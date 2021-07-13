@@ -314,4 +314,32 @@ class Colby_Clubs_Admin {
 		return $output;
 	}
 
+	public function acf2api_hook_all_post_types(){
+
+		global $wp_post_types; // Get all the post types.
+		$post_types = array_keys( $wp_post_types );
+
+		foreach ( $post_types as $post_type ) {
+
+			// Add a filter for this post type.
+			add_filter( 'rest_prepare_' . $post_type, function( $data, $post, $request ) {
+				$response_data = $data->get_data(); // Get the response data.
+
+				if ( 'view' !== $request['context']  || is_wp_error( $data ) ) {
+					return $data; // Bail early if there's an error.
+				}
+
+				$fields = get_fields( $post->ID );
+				if ( $fields ) {
+					foreach ( $fields as $field_name => $value ){
+						$response_data[$field_name] = $value;
+					}
+				}
+
+				$data->set_data( $response_data );	//Commit the API result var to the API endpoint
+				return $data;
+			}, 10, 3);
+		}
+	}
+
 }

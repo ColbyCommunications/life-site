@@ -1,4 +1,4 @@
-/*! elementor-pro - v3.3.1 - 20-06-2021 */
+/*! elementor-pro - v3.3.2 - 11-07-2021 */
 (self["webpackChunkelementor_pro"] = self["webpackChunkelementor_pro"] || []).push([["gallery"],{
 
 /***/ "../modules/gallery/assets/js/frontend/handler.js":

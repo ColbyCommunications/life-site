@@ -67,10 +67,21 @@
 			if ( count > 0 ) {
 				$results.text('').show(); // clear it out.
 				$.each( response, function( index, object ) { 
+					console.log( object );
 					let output = '';
 					output = '<div class="item">';
 					output += '<h3>' + object.title.rendered + '</h3>';
-					output += '<div class="content">' + object.content.rendered + '</div>';
+					output += '<div class="content">';
+					output += object.content.rendered + '<hr />';
+					if ( object.c_dei_statement != '' )
+						output += '<p><strong>Diversity, Equity, & Inclusion Statement</strong></p>' + object.c_dei_statement + '<hr />';
+					if ( object.c_club_president != '' )
+						output += '<p><strong>Club President</strong><br /><a href="mailto:' + object.c_club_president_email + '">' + object.c_club_president + '</a></p>';
+					if ( object.c_club_treasurer != '' )
+						output += '<p><strong>Club Treasurer</strong><br /><a href="mailto:' + object.c_club_treasurer_email + '">' + object.c_club_treasurer + '</a></p>';
+					if ( object.c_faculty_advisor != '' )
+						output += '<p><strong>Faculty Advisor</strong><br /><a href="mailto:' + object.c_faculty_advisor_email + '">' + object.c_faculty_advisor + '</a></p>';
+					output += '</div>';
 					output += '</div>';
 					$(output).hide().appendTo($results).fadeIn();
 				});
