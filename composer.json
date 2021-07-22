@@ -4,7 +4,7 @@
     "type": "project",
     "require": {
         "johnpbloch/wordpress-core-installer": "^2.0",
-        "johnpbloch/wordpress-core": "^5.7",
+        "johnpbloch/wordpress-core": "^5.8",
         "wpackagist-theme/twentyseventeen": "^2",
         "wpackagist-plugin/classic-editor": "^1",
         "wpackagist-plugin/elementor": "^3",
