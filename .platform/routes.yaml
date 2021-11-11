@@ -20,6 +20,9 @@
         '^/wp-admin/(.*)':
           to: "/wp/wp-admin/$1"
           regexp: true
+        '^/wp-content/uploads/2021/07/Employee-and-Student-Emergency-Guide_2019-1.pdf%20$':
+          to: 'https://life.colby.edu/wp-content/uploads/2021/07/Employee-and-Student-Emergency-Guide_2019-1.pdf'
+          regexp: true
 
 # *ALL* www.* requests should be redirected back to primary domain
 "https://www.{all}/":
