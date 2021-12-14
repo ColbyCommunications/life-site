@@ -27,7 +27,6 @@
         "wpackagist-plugin/siteimprove": "^1",
         "colbycommunications/colby-life-theme": "dev-master",
         "wpackagist-plugin/publishpress": "*",
-        "wpackagist-plugin/jet-style-manager": "^1",
         "wpackagist-plugin/query-monitor": "^3.7.1"
     },
     "authors": [
