@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a67724c005684b5e82844976ffead3a9",
+    "content-hash": "86f8cda9a883b36cd62b62821b65e3b6",
     "packages": [
         {
             "name": "brick/math",
@@ -78,7 +78,7 @@
                 "type": "zip",
                 "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-48af38e1aae394e6f259c5a163723abf9f3afe5c-zip-156b29.zip",
                 "reference": "48af38e1aae394e6f259c5a163723abf9f3afe5c",
-                "shasum": "c322f5dbd24b44edfa4365ebfe97d4fe812c1b61"
+                "shasum": "c3b7fb7452a62bb42d654898d9a84444fbdbc483"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -93,6 +93,34 @@
                 "wordpress"
             ],
             "time": "2022-04-18T18:41:00+00:00"
+        },
+        {
+            "name": "colbycommunications/colby-clubs",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ColbyCommunications/colby-clubs.git",
+                "reference": "93b91a12ce6d1db47d5fedd8166f2deecb62cab5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.colby.edu/dist/colbycommunications/colby-clubs/colbycommunications-colby-clubs-93b91a12ce6d1db47d5fedd8166f2deecb62cab5-zip-060dab.zip",
+                "reference": "93b91a12ce6d1db47d5fedd8166f2deecb62cab5",
+                "shasum": "69f7e36cd80a15d44a738b05680007b22f6eec55"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Brandon Waltz",
+                    "email": "brandon.waltz@colby.edu"
+                }
+            ],
+            "description": "Plugin for life.colby.edu",
+            "homepage": "https://github.com/colbycommunications/colby-clubs",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2022-06-03T16:58:29+00:00"
         },
         {
             "name": "colbycommunications/colby-life-theme",
@@ -179,7 +207,7 @@
                 "type": "zip",
                 "url": "https://satis.colby.edu/dist/colbycommunications/colby-ticket/colbycommunications-colby-ticket-4de4cbfcfa62f4ffc64273910244b4f53b04bc48-zip-e1cd7a.zip",
                 "reference": "4de4cbfcfa62f4ffc64273910244b4f53b04bc48",
-                "shasum": "a38483a718ffefa34f329ef2776329abd9a900f3"
+                "shasum": "9a5278503cb34ef9ed05e4943dbe7dd8b055439e"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -207,7 +235,7 @@
                 "type": "zip",
                 "url": "https://satis.colby.edu/dist/colbycommunications/elementor-pro/colbycommunications-elementor-pro-5d5ef9f064cc28c33af58cf9862d7b184a5b0e65-zip-66455b.zip",
                 "reference": "5d5ef9f064cc28c33af58cf9862d7b184a5b0e65",
-                "shasum": "40b6132e4493732bc35b7ac3db5d3c3245467b61"
+                "shasum": "e7ebe89376361d56cd7dac2c6cbdfae8ea21d04d"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -235,7 +263,7 @@
                 "type": "zip",
                 "url": "https://satis.colby.edu/dist/colbycommunications/gravityforms/colbycommunications-gravityforms-5ddb13278d981cafcfc887b0e122c52307dd6d15-zip-34a4a8.zip",
                 "reference": "5ddb13278d981cafcfc887b0e122c52307dd6d15",
-                "shasum": "4b329471df88d483af806f2eacd96d563f57be36"
+                "shasum": "d8f1412868a7f38e86ac32a72ed684d1584b6c01"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -263,7 +291,7 @@
                 "type": "zip",
                 "url": "https://satis.colby.edu/dist/colbycommunications/jet-elements/colbycommunications-jet-elements-aa2425d9eeda1b47acb6cf626358da2666adb18a-zip-8c06be.zip",
                 "reference": "aa2425d9eeda1b47acb6cf626358da2666adb18a",
-                "shasum": "d4abec89e1680d81b318e132cb4c7ef5376086b8"
+                "shasum": "d5b82e56becddd090683da924cfd5dd61607ce03"
             },
             "type": "wordpress-plugin",
             "authors": [
