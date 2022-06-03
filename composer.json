@@ -8,7 +8,6 @@
         "wpackagist-theme/twentyseventeen": "^2.1",
         "wpackagist-plugin/classic-editor": "^1.4",
         "wpackagist-plugin/elementor": "^3.1.4",
-        "colbycommunications/colby-groups": "dev-wp4-test",
         "wpackagist-plugin/capability-manager-enhanced": "2.3.2",
         "wpackagist-plugin/tablepress": "^1.10",
         "wpackagist-theme/hello-elementor": "^2.2.2",
@@ -17,11 +16,9 @@
         "wpackagist-plugin/wordpress-seo": "^17.8",
         "wpackagist-plugin/cloudflare": "^4.5.1",
         "devgeniem/wp-redis-object-cache-dropin": "^1.6",
-        "wpackagist-plugin/cache-control": "^2.2.3",
-        "colbycommunications/colby-base-theme": "dev-master",
         "wpackagist-plugin/public-post-preview": "^2.9.1",
         "pristas-peter/wp-graphql-gutenberg": "^0.3.4",
-        "colbycommunications/colby-life-theme": "dev-master",
+        "colbycommunications/colby-life-theme": "dev-dev",
         "wpackagist-plugin/publishpress": "*",
         "wp-graphql/wp-graphql": "^1.6.10",
         "wp-graphql/wp-graphiql": "^1.0",
@@ -37,14 +34,6 @@
         }
     ],
     "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/ColbyCommunications/colby-base-theme"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/ColbyCommunications/colby-groups"
-        },
         {
             "type": "git",
             "url": "https://github.com/ColbyCommunications/colby-life-theme"
