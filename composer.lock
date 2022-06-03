@@ -100,7 +100,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-life-theme",
-                "reference": "0be37d668522e0545b5f078c4b37f92ddda2228f"
+                "reference": "689eb20a1e5da6e93b925ae2d50be3b176cb8478"
             },
             "require": {
                 "php": "^7.4|^8.0",
@@ -165,7 +165,7 @@
                 "issues": "https://github.com/roots/sage/issues",
                 "forum": "https://discourse.roots.io/"
             },
-            "time": "2022-06-03T15:45:45+00:00"
+            "time": "2022-06-03T15:54:32+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
