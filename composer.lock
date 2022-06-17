@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86f8cda9a883b36cd62b62821b65e3b6",
+    "content-hash": "a4f7d0a7e7e8575ecd008288a084f4c0",
     "packages": [
         {
             "name": "brick/math",
@@ -124,11 +124,11 @@
         },
         {
             "name": "colbycommunications/colby-life-theme",
-            "version": "dev-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-life-theme",
-                "reference": "689eb20a1e5da6e93b925ae2d50be3b176cb8478"
+                "reference": "887b6a7b452fd97f57fe13026f36a6ad78fbd8a7"
             },
             "require": {
                 "php": "^7.4|^8.0",
@@ -141,6 +141,7 @@
                 "log1x/sage-directives": "A collection of useful Blade directives for WordPress and Sage (^1.0).",
                 "log1x/sage-svg": "A useful SVG directive for inlining SVG's within Blade views (^1.0)."
             },
+            "default-branch": true,
             "type": "wordpress-theme",
             "extra": {
                 "acorn": {
@@ -193,7 +194,7 @@
                 "issues": "https://github.com/roots/sage/issues",
                 "forum": "https://discourse.roots.io/"
             },
-            "time": "2022-06-03T15:54:32+00:00"
+            "time": "2022-06-17T11:26:05+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -385,16 +386,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.3.6",
+            "version": "2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "0f43aa1652c447a6bc7c9217ec133313b1d32e72"
+                "reference": "10cd375cf85dede2ff417ceab517ef9a0dc55407"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/0f43aa1652c447a6bc7c9217ec133313b1d32e72",
-                "reference": "0f43aa1652c447a6bc7c9217ec133313b1d32e72",
+                "url": "https://api.github.com/repos/composer/composer/zipball/10cd375cf85dede2ff417ceab517ef9a0dc55407",
+                "reference": "10cd375cf85dede2ff417ceab517ef9a0dc55407",
                 "shasum": ""
             },
             "require": {
@@ -437,6 +438,11 @@
             "extra": {
                 "branch-alias": {
                     "dev-main": "2.3-dev"
+                },
+                "phpstan": {
+                    "includes": [
+                        "phpstan/rules.neon"
+                    ]
                 }
             },
             "autoload": {
@@ -470,7 +476,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.3.6"
+                "source": "https://github.com/composer/composer/tree/2.3.7"
             },
             "funding": [
                 {
@@ -486,7 +492,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-01T19:57:13+00:00"
+            "time": "2022-06-06T14:43:28+00:00"
         },
         {
             "name": "composer/installers",
@@ -1367,7 +1373,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -1420,7 +1426,7 @@
         },
         {
             "name": "illuminate/cache",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
@@ -1480,7 +1486,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -1534,7 +1540,7 @@
         },
         {
             "name": "illuminate/config",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -1582,7 +1588,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -1642,7 +1648,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -1693,7 +1699,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -1741,7 +1747,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1796,7 +1802,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -1858,7 +1864,7 @@
         },
         {
             "name": "illuminate/http",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/http.git",
@@ -1916,7 +1922,7 @@
         },
         {
             "name": "illuminate/log",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/log.git",
@@ -1965,7 +1971,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -2011,7 +2017,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -2059,7 +2065,7 @@
         },
         {
             "name": "illuminate/session",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",
@@ -2115,16 +2121,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "89245b6e19017f627a35af3874ad9251b76b02cc"
+                "reference": "be43102d3491e8335812aa5441a1552108ddd7b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/89245b6e19017f627a35af3874ad9251b76b02cc",
-                "reference": "89245b6e19017f627a35af3874ad9251b76b02cc",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/be43102d3491e8335812aa5441a1552108ddd7b5",
+                "reference": "be43102d3491e8335812aa5441a1552108ddd7b5",
                 "shasum": ""
             },
             "require": {
@@ -2179,11 +2185,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-05-09T16:28:53+00:00"
+            "time": "2022-06-07T14:46:48+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v8.83.15",
+            "version": "v8.83.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -2609,16 +2615,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "247918972acd74356b0a91dfaa5adcaec069b6c0"
+                "reference": "5579edf28aee1190a798bfa5be8bc16c563bd524"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/247918972acd74356b0a91dfaa5adcaec069b6c0",
-                "reference": "247918972acd74356b0a91dfaa5adcaec069b6c0",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5579edf28aee1190a798bfa5be8bc16c563bd524",
+                "reference": "5579edf28aee1190a798bfa5be8bc16c563bd524",
                 "shasum": ""
             },
             "require": {
@@ -2697,7 +2703,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.6.0"
+                "source": "https://github.com/Seldaek/monolog/tree/2.7.0"
             },
             "funding": [
                 {
@@ -2709,7 +2715,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-10T09:36:00+00:00"
+            "time": "2022-06-09T08:59:12+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -8187,15 +8193,15 @@
         },
         {
             "name": "wpackagist-plugin/cloudflare",
-            "version": "4.10.0",
+            "version": "4.10.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cloudflare/",
-                "reference": "tags/4.10.0"
+                "reference": "tags/4.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.10.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.10.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -8241,15 +8247,15 @@
         },
         {
             "name": "wpackagist-plugin/elementor",
-            "version": "3.6.5",
+            "version": "3.6.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/3.6.5"
+                "reference": "tags/3.6.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.3.6.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.6.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -8259,15 +8265,15 @@
         },
         {
             "name": "wpackagist-plugin/header-footer",
-            "version": "3.2.3",
+            "version": "3.2.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/header-footer/",
-                "reference": "tags/3.2.3"
+                "reference": "tags/3.2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/header-footer.3.2.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/header-footer.3.2.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -8295,15 +8301,15 @@
         },
         {
             "name": "wpackagist-plugin/publishpress",
-            "version": "3.7.1",
+            "version": "3.8.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/publishpress/",
-                "reference": "tags/3.7.1"
+                "reference": "tags/3.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/publishpress.3.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/publishpress.3.8.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
