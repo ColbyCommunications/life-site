@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ed65a617d489bc11fad54a6906c1957",
+    "content-hash": "90e1fe066191c75f943c06138d386dc0",
     "packages": [
         {
             "name": "brick/math",
@@ -8298,24 +8298,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/public-post-preview/"
-        },
-        {
-            "name": "wpackagist-plugin/publishpress",
-            "version": "3.8.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/publishpress/",
-                "reference": "tags/3.8.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/publishpress.3.8.1.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/publishpress/"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
