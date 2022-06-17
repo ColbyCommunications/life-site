@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4f7d0a7e7e8575ecd008288a084f4c0",
+    "content-hash": "4ed65a617d489bc11fad54a6906c1957",
     "packages": [
         {
             "name": "brick/math",
@@ -8157,15 +8157,15 @@
         },
         {
             "name": "wpackagist-plugin/capability-manager-enhanced",
-            "version": "2.3.2",
+            "version": "2.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/capability-manager-enhanced/",
-                "reference": "tags/2.3.2"
+                "reference": "tags/2.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.2.3.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.2.4.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
