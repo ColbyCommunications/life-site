@@ -20,6 +20,12 @@
         '^/wp-admin/(.*)':
           to: "/wp/wp-admin/$1"
           regexp: true
+        '^/ges/(.*)':
+          to: "/offcampus/global-entry-semesters/$1"
+          regexp: true
+        '^/global-entry/(.*)':
+          to: "/offcampus/global-entry-semesters/$1"
+          regexp: true
 
 
 # *ALL* www.* requests should be redirected back to primary domain
