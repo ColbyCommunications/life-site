@@ -23,14 +23,21 @@
         '^/ges/?$':
           to: "/offcampus/global-entry-semesters/"
           regexp: true
+          code: 301
         '^/global-entry/?$':
           to: "/offcampus/global-entry-semesters/"
           regexp: true
+          code: 301
         '^/ges/(.*)':
           to: "/offcampus/global-entry-semesters/$1"
           regexp: true
+          code: 301
         '^/global-entry/(.*)':
           to: "/offcampus/global-entry-semesters/$1"
+          regexp: true
+          code: 301
+        '^/health-services/?$':
+          to: "/your-health/health-services/"
           regexp: true
 
 
