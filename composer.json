@@ -6,7 +6,7 @@
         "johnpbloch/wordpress-core-installer": "^2.0",
         "johnpbloch/wordpress-core": "6.2.2",
         "wpackagist-plugin/classic-editor": "1.6.3",
-        "wpackagist-plugin/elementor": "3.13.4",
+        "wpackagist-plugin/elementor": "3.15.3",
         "wpackagist-plugin/capability-manager-enhanced": "2.8.1",
         "wpackagist-plugin/tablepress": "1.14",
         "wpackagist-plugin/header-footer": "3.2.5",
