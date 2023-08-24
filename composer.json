@@ -22,7 +22,7 @@
         "wp-cli/wp-cli-bundle": "^2.4",
         "psy/psysh": "^0.10.4",
         "colbycommunications/advanced-custom-fields-pro": "5.12.3",
-        "colbycommunications/elementor-pro": "3.5.2",
+        "colbycommunications/elementor-pro": "3.15.1",
         "colbycommunications/jet-elements": "2.6.2",
         "colbycommunications/gravityforms": "2.6.9",
         "colbycommunications/colby-ticket": "1.0.1",
