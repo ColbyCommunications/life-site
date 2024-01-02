@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1515018af4bc6a846a7577da40dc5ef",
+    "content-hash": "278b63707fdae94d7e24119f73d5ca61",
     "packages": [
         {
             "name": "brick/math",
@@ -8246,15 +8246,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.13.5",
+            "version": "1.15.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.13.5"
+                "reference": "tags/1.15.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.15.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -8354,15 +8354,15 @@
         },
         {
             "name": "wpackagist-plugin/tablepress",
-            "version": "1.14",
+            "version": "2.2.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/tablepress/",
-                "reference": "tags/1.14"
+                "reference": "tags/2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tablepress.1.14.zip"
+                "url": "https://downloads.wordpress.org/plugin/tablepress.2.2.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
