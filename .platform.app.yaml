@@ -55,7 +55,7 @@ variables:
   env: !include project/platform/variables.env.yaml
   php:
     upload_max_filesize: 128M
-    memory_limit: 256M
+    memory_limit: 500M
 
 resources: 
     base_memory: 128
