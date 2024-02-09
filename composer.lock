@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74a86ffbd305de42d6f29bc1ec8d5e69",
+    "content-hash": "8d660c8c03817944998790908897ad2d",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -35,16 +35,16 @@
         },
         {
             "name": "colbycommunications/colby-clubs",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/colby-clubs.git",
-                "reference": "bc53742588e683517bbfa667c0a922580ec1bb99"
+                "reference": "1876cdbea4d4c5399a2a094b721560be43a6a402"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/colby-clubs/colbycommunications-colby-clubs-bc53742588e683517bbfa667c0a922580ec1bb99-zip-6f0c59.zip",
-                "reference": "bc53742588e683517bbfa667c0a922580ec1bb99"
+                "url": "https://satis.colby.edu/dist/colbycommunications/colby-clubs/colbycommunications-colby-clubs-1876cdbea4d4c5399a2a094b721560be43a6a402-zip-04a493.zip",
+                "reference": "1876cdbea4d4c5399a2a094b721560be43a6a402"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -58,7 +58,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2024-02-09T16:08:19+00:00"
+            "time": "2024-02-09T17:29:22+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
