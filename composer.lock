@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1d56c213eb7bf90d64a19d7a500828c",
+    "content-hash": "74a86ffbd305de42d6f29bc1ec8d5e69",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -35,16 +35,16 @@
         },
         {
             "name": "colbycommunications/colby-clubs",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/colby-clubs.git",
-                "reference": "df154b34d27eda5651e8ebf913912ab7ae5d4f9f"
+                "reference": "bc53742588e683517bbfa667c0a922580ec1bb99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/colby-clubs/colbycommunications-colby-clubs-df154b34d27eda5651e8ebf913912ab7ae5d4f9f-zip-985e58.zip",
-                "reference": "df154b34d27eda5651e8ebf913912ab7ae5d4f9f"
+                "url": "https://satis.colby.edu/dist/colbycommunications/colby-clubs/colbycommunications-colby-clubs-bc53742588e683517bbfa667c0a922580ec1bb99-zip-6f0c59.zip",
+                "reference": "bc53742588e683517bbfa667c0a922580ec1bb99"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -58,7 +58,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2024-02-08T17:05:56+00:00"
+            "time": "2024-02-09T16:08:19+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -292,16 +292,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "96d107e2bfe61bb9eafe55a9d45bd7faed1dd461"
+                "reference": "aaf6ed5ccd27c23f79a545e351b4d7842a99d0bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/96d107e2bfe61bb9eafe55a9d45bd7faed1dd461",
-                "reference": "96d107e2bfe61bb9eafe55a9d45bd7faed1dd461",
+                "url": "https://api.github.com/repos/composer/composer/zipball/aaf6ed5ccd27c23f79a545e351b4d7842a99d0bc",
+                "reference": "aaf6ed5ccd27c23f79a545e351b4d7842a99d0bc",
                 "shasum": ""
             },
             "require": {
@@ -386,7 +386,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.7.0"
+                "source": "https://github.com/composer/composer/tree/2.7.1"
             },
             "funding": [
                 {
@@ -402,7 +402,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-08T14:09:19+00:00"
+            "time": "2024-02-09T14:26:28+00:00"
         },
         {
             "name": "composer/installers",
