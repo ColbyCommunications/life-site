@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3cb9819f60f9eb65dd9300aa23c1316",
+    "content-hash": "ae1c4c9cd7f068388130ba826707ba0a",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -5495,15 +5495,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.15.1",
+            "version": "1.17.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.15.1"
+                "reference": "tags/1.17.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.15.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.17.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -5621,15 +5621,15 @@
         },
         {
             "name": "wpackagist-plugin/tablepress",
-            "version": "2.2.4",
+            "version": "2.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/tablepress/",
-                "reference": "tags/2.2.4"
+                "reference": "tags/2.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tablepress.2.2.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/tablepress.2.3.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
