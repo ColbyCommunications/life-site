@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83e8aec35ac670fc1182a361a7d233aa",
+    "content-hash": "5913198b639accc2a7888c09e2a90da8",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -5457,15 +5457,15 @@
         },
         {
             "name": "wpackagist-plugin/capability-manager-enhanced",
-            "version": "2.13.0",
+            "version": "2.18.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/capability-manager-enhanced/",
-                "reference": "tags/2.13.0"
+                "reference": "tags/2.18.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.2.13.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.2.18.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -5637,15 +5637,15 @@
         },
         {
             "name": "wpackagist-plugin/tablepress",
-            "version": "2.3.2",
+            "version": "3.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/tablepress/",
-                "reference": "tags/2.3.2"
+                "reference": "tags/3.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tablepress.2.3.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/tablepress.3.0.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
