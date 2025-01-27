@@ -39,6 +39,11 @@
         '^/health-services/?$':
           to: "/your-health/health-services/"
           regexp: true
+          code: 301
+        '^/what-to-do/diversity-equity-inclusion/?$':
+          to: "/what-to-do/multicultural-programs/"
+          regexp: true
+          code: 301
 
 
 # *ALL* www.* requests should be redirected back to primary domain
