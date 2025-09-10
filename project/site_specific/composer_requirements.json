@@ -1,0 +1,11 @@
+{
+    "require": {
+        "wpackagist-theme/hello-elementor": "3.2.1",
+        "colbycommunications/colby-clubs": "1.0.3",
+        "colbycommunications/elementor-pro": "3.26.2",
+        "wpackagist-plugin/elementor": "3.26.3",
+        "wpackagist-plugin/custom-post-type-ui": "1.17.1",
+        "wpackagist-plugin/tablepress": "3.0.2"
+    },
+    "repositories": []
+}

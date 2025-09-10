@@ -1,0 +1,30 @@
+'^/wp-admin$':
+  to: "/wp/wp-admin/"
+  regexp: true
+'^/wp-admin/(.*)':
+  to: "/wp/wp-admin/$1"
+  regexp: true
+'^/ges/?$':
+  to: "/offcampus/global-entry-semesters/"
+  regexp: true
+  code: 301
+'^/global-entry/?$':
+  to: "/offcampus/global-entry-semesters/"
+  regexp: true
+  code: 301
+'^/ges/(.*)':
+  to: "/offcampus/global-entry-semesters/$1"
+  regexp: true
+  code: 301
+'^/global-entry/(.*)':
+  to: "/offcampus/global-entry-semesters/$1"
+  regexp: true
+  code: 301
+'^/health-services/?$':
+  to: "/your-health/health-services/"
+  regexp: true
+  code: 301
+'^/what-to-do/diversity-equity-inclusion/?$':
+  to: "/what-to-do/multicultural-programs/"
+  regexp: true
+  code: 301
