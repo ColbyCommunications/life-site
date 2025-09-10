@@ -1,6 +1,6 @@
 {
     "require": {
-        "wpackagist-theme/hello-elementor": "3.2.1",
+        "wpackagist-theme/hello-elementor": "3.4.4",
         "colbycommunications/colby-clubs": "1.0.3",
         "colbycommunications/elementor-pro": "3.26.2",
         "wpackagist-plugin/elementor": "3.26.3",
