@@ -28,3 +28,15 @@
   to: "/what-to-do/multicultural-programs/"
   regexp: true
   code: 301
+'^/offcampus/?$':
+  to: "/global-education-opportunities-geo/"
+  regexp: true
+  code: 301
+'^/offcampus/watson-fellowship-overview/?$':
+  to: "https://davisconnects.colby.edu/fellowships-advising/watson-fellowship-overview/"
+  regexp: true
+  code: 301
+'^/offcampus/watson-fellowship-application-procedures/?$':
+  to: "https://davisconnects.colby.edu/fellowships-advising/watson-fellowship-overview/watson-fellowship-application/"
+  regexp: true
+  code: 301
