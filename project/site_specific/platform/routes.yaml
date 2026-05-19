@@ -29,7 +29,7 @@
   regexp: true
   code: 301
 '^/offcampus/?$':
-  to: "/global-education-opportunities-geo/"
+  to: "https://davisconnects.colby.edu/global-education-opportunities-geo/"
   regexp: true
   code: 301
 '^/offcampus/watson-fellowship-overview/?$':
