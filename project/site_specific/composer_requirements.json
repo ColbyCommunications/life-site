@@ -1,11 +1,11 @@
 {
     "require": {
-        "wpackagist-theme/hello-elementor": "3.4.4",
+        "wpackagist-theme/hello-elementor": "3.4.9",
         "colbycommunications/colby-clubs": "1.0.3",
-        "colbycommunications/elementor-pro": "3.34.0",
-        "wpackagist-plugin/elementor": "3.34.1",
-        "wpackagist-plugin/custom-post-type-ui": "1.17.1",
-        "wpackagist-plugin/tablepress": "3.2.1"
+        "colbycommunications/elementor-pro": "4.1.0",
+        "wpackagist-plugin/elementor": "4.1.1",
+        "wpackagist-plugin/custom-post-type-ui": "1.19.2",
+        "wpackagist-plugin/tablepress": "3.3.1"
     },
     "repositories": [],
     "extra": {
